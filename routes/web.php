@@ -28,7 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
     })->name('edit_profile');
 
     Route::post('/editprofile', function(Request $request) {
-        Auth::user()->update([
+        User::where('id', '=', '1')->update([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
         ]);

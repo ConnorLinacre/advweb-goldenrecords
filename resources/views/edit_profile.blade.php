@@ -14,12 +14,12 @@
             @csrf
             <div id="form-group">
                 <label for="name-input">Name</label>
-                <input name="name" value="{{ Auth::user()->name }}" class="form-control" id="name-input">
+                <input name="name" value="{{ App\Models\User::where('id', '=', '1')->first()->name }}" class="form-control" id="name-input">
             </div>
             <p></p>
             <div id="form-group">
                 <label for="description-input">Description</label>
-                <textarea name="description" class="form-control" id="description-input" rows="5">{{ Auth::user()->description }}</textarea>
+                <textarea name="description" class="form-control" id="description-input" rows="5">{{ App\Models\User::where('id', '=', '1')->first()->description }}</textarea>
             </div>
             <p></p>
             <div id="form-group">
