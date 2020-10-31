@@ -8,18 +8,21 @@
                 {{ session('status') }}
             </div>
         @endif
+        <!-- Image to be displayed, located in public folder. Style changed from pixel to % for auto adjustment -->
             <img src="{{ asset('images/GoldenRecords_OMD.jpg') }}" class="rounded mx-auto d-block" style="width: 30%; height: 30%"/>
             <br/>
         <section class="flex flex-col break-words bg-white sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
+            <!-- Changed dashboard text to display user name. -->
             <header class="font-semibold bg-gray-200 text-gray-700 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
                 About the Band
             </header>
-            <!-- Changed dashboard text to display user name. -->
+            <!-- More than one account can change description, however if no accounts present, continue to run webpage. Error will happen if change -->
             <div class="w-full p-6">
                 <p class="text-gray-700">
-                    {{ App\Models\User::where('id', '=', '1')->first()->description }}
+                    {{ App\Models\User::where('id', '=', '1')->first()->description ?? "" }}
                 </p>
             </div>
+            <!-- Foreach which will display a new tour card on Home. -->
             <div style="padding-left: 5px; padding-right: 5px">
                 @foreach($tours as $tour)
                     @include('tourdate.card', [

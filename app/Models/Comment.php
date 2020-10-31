@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
+    /* TODO Implement comment section */
     use HasFactory;
 }

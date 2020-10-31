@@ -1,7 +1,9 @@
+<!-- Card display for tour dates -->
 <div style="border: 2px solid black; border-radius: 5px; padding-left: 5px; padding-right: 5px">
     <div id="header" class="border-bottom"><b>{{ $name }}</b></div>
     <div id="body">Touring from {{ $from }} until {{ $to }}</div>
     <div id="footer" class="border-top">
+        <!-- Authorisation check allows only logged users to display and use edit and delete functions. -->
         @if(Auth::check())
             <div class="text-right" style="width: 29%; display: inline-block">
                 <a href="{{ route('edit_tour', ['tourDate' => $tour, ]) }}">Edit Tour&nbsp;</a>

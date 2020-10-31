@@ -7,9 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateTourDatesTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Tourdate parameters for SQL
      */
     public function up()
     {
@@ -22,11 +20,7 @@ class CreateTourDatesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::dropIfExists('tour_dates');

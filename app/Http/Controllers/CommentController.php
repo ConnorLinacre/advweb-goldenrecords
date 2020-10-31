@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+/* TODO Implement comments controller before submit */
 use App\Models\Comment;
 use Illuminate\Http\Request;
 
