@@ -7,6 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+INFO README: Check Below for APA style references. 
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -59,3 +61,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## APA6th Huddersfield University U1653840 Assignment 1
+
+Bootstrap Plugin:
+Mark Otto, B. (2020). Bootstrap Plugin. Retrieved 31 October 2020, from https://getbootstrap.com/
+
+TailwindCSS:
+Tailwind CSS - A Utility-First CSS Framework for Rapidly Building Custom Designs. (2020). Retrieved 31 October 2020, from https://tailwindcss.com/
+
+University Resources:
+Jenkins, T. (2020). elder-university/fuzzy-umbrella. Retrieved 31 October 2020, from https://github.com/elder-university/fuzzy-umbrella
